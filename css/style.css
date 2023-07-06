@@ -437,6 +437,7 @@ body {
 }
 
 .header-wrapper {
+  height: auto;
   font-family: "Livvic", sans-serif;
   font-weight: 600;
   margin-top: 7.7rem;
@@ -464,6 +465,7 @@ body {
 
 .footer {
   background-color: #002529;
+  height: auto;
 }
 .footer-text {
   width: 100%;
@@ -519,6 +521,7 @@ body {
 
 main {
   flex-grow: 1;
+  height: auto;
 }
 
 .header-hero-wrapper {
