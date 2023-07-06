@@ -434,7 +434,6 @@ body {
 }
 
 .header-wrapper {
-  height: auto;
   font-family: "Livvic", sans-serif;
   font-weight: 600;
   margin-top: 7.7rem;
@@ -566,4 +565,30 @@ main {
   font-weight: 600;
   line-height: 1.55;
   margin-top: 7.9rem;
+}
+
+@media (max-width: 1530px) {
+  .header-hero-left-image {
+    display: none;
+  }
+  .header-hero-right-image {
+    position: static;
+  }
+  .header-heading {
+    flex-direction: column;
+  }
+  .header-heading h1 {
+    font-size: 6.4rem;
+    text-align: center;
+  }
+  .header-hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-hero-wrapper {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */

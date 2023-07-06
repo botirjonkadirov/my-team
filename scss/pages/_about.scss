@@ -43,4 +43,42 @@
         margin-top: 7.9rem;
     }
 }
+@media (max-width: 1530px) {
+    .header-hero {
+        &-left-image {
+            display: none;
+        }
+
+       
+    }
+    .header-hero-right-image {
+        position: static;
+        // display: flex;
+        // background-color: aqua;
+        
+    }
+    .header-heading {
+        flex-direction: column;
+        // background-color: aqua;
+        h1 {
+            font-size: 6.4rem;
+            text-align: center;
+        }
+     
+    }
+    .header-hero {
+        display: flex;
+        flex-direction: column;
+    }
+    .header-hero-wrapper {
+        // height: 100%;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: space-between;
+        // background-color: aqua;
+
+    }
+}
 
