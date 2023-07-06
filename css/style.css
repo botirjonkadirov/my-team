@@ -640,6 +640,9 @@ main {
   .header-hero-left-image {
     display: none;
   }
+  .header-hero-wrapper {
+    position: static;
+  }
   .header-hero-right-image {
     position: static;
     width: 100%;
