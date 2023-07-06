@@ -306,4 +306,264 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+img {
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover; /* contain */
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #014E56;
+}
+
+/* livvic-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/livvic-v14-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/livvic-v14-latin-500italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/livvic-v14-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/livvic-v14-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/livvic-v14-latin-700italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+body {
+  font-family: "Livvic", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.66;
+  color: #FFFFFF;
+}
+
+.button {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.55;
+  border-radius: 2.4rem;
+  border: 2px solid transparent;
+  padding: 0.9rem 3.3rem 1.1rem 3.2rem;
+  transition: 0.2s ease;
+}
+
+.light-btn {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.light-btn:hover {
+  background-color: #FFFFFF;
+  color: #002529;
+}
+
+.dark-btn {
+  color: #002529;
+  border-color: #002529;
+}
+.dark-btn:hover {
+  background-color: #002529;
+  color: #FFFFFF;
+}
+
+.header-wrapper {
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  margin-top: 7.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-wrapper a {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.header-wrapper a:hover {
+  transform: rotate(-5deg);
+  color: aquamarine;
+}
+.header-wrapper ul {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.header-wrapper ul img {
+  margin-right: 4rem;
+}
+
+.footer {
+  background-color: #002529;
+}
+.footer-text {
+  width: 100%;
+  width: 44, 5rem;
+  height: 10rem;
+  text-align: left;
+  font-size: 1.5rem;
+  color: 1.66;
+  font-weight: 600;
+  margin-right: 12.5rem;
+  margin-left: 12.5rem;
+}
+
+.footer-container {
+  display: flex;
+  margin-top: 4.8rem;
+  margin-bottom: 4.8rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.footer-nav-items a {
+  color: #FFFFFF;
+}
+.footer-nav .about {
+  margin-left: 4rem;
+}
+.footer-nav a:hover {
+  transform: rotate(5deg);
+  color: aquamarine;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 5.1rem;
+}
+.footer-social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1.6rem;
+}
+.footer-social-text {
+  width: 25.5rem;
+  font-size: 1.5rem;
+  color: 1.66;
+  font-weight: 600;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.header-hero-wrapper {
+  position: relative;
+  margin-top: 12.9rem;
+}
+.header-hero-wrapper .header-hero-left-image {
+  position: absolute;
+  left: -16.8rem;
+}
+.header-hero-wrapper .header-hero-right-image {
+  position: absolute;
+  right: 0;
+  top: 35rem;
+}
+.header-hero-wrapper h1 {
+  font-size: 10rem;
+  line-height: 1;
+}
+
+.header-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-heading-hr {
+  width: 50px;
+  height: 4px;
+  background-color: #79C8C7;
+  border-style: none;
+}
+.header-heading-item {
+  display: flex;
+  flex-direction: column;
+}
+.header-heading-h {
+  width: 52.6rem;
+}
+.header-heading-h span {
+  color: #F67E7E;
+}
+.header-heading p {
+  width: 44.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.55;
+  margin-top: 7.9rem;
 }/*# sourceMappingURL=style.css.map */
