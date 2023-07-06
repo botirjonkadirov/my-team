@@ -1,6 +1,7 @@
 .header-hero-wrapper {
     position: relative;
     margin-top: 12.9rem;
+    width: auto;
     .header-hero-left-image {
         position: absolute;
         left: -16.8rem;
@@ -52,8 +53,10 @@
        
     }
     .header-hero-right-image {
-        position: static;
+        // position: initial;
         top: 0rem;
+        width: 100%;
+        height: auto;
 
         // display: flex;
         // background-color: aqua;
@@ -66,18 +69,15 @@
             font-size: 6.4rem;
             text-align: center;
         }
-     
+     .header-heading-hr {
+        display: none;
+     }
     }
    
-    .header-hero-wrapper {
-        // height: 100%;
+    .wrapper {
+        height: 100%;
         display: flex;
         flex-direction: column;
-        position: static;
-        // align-items: center;   
-        // justify-content: space-between;
-        // background-color: aqua;
-
     }
 }
 @media (max-width: 970px) {
@@ -88,6 +88,14 @@
         h1 {
             font-size: 4rem;
         }
+        p {
+            width: 32.7rem;
+            margin-top: 3rem;
+        }
+    }
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
    
 }

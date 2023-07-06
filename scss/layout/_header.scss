@@ -29,4 +29,27 @@
         }
     }
 }
+.triple {
+    display: none;
+}
+
+@media (max-width: 660px) {
+    .light-btn {
+        display: none;
+    }
+    .nav-home {
+        display: none;
+    }
+    .triple {
+        display: block;
+    }
+    .header-nav-logo {
+        width: 100%;
+        height: auto;
+    }
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
 
