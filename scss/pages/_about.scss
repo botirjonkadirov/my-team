@@ -53,6 +53,8 @@
     }
     .header-hero-right-image {
         position: static;
+        top: 0rem;
+
         // display: flex;
         // background-color: aqua;
         
@@ -66,19 +68,27 @@
         }
      
     }
-    .header-hero {
-        display: flex;
-        flex-direction: column;
-    }
+   
     .header-hero-wrapper {
         // height: 100%;
-        position: static;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        position: static;
+        // align-items: center;   
         // justify-content: space-between;
         // background-color: aqua;
 
     }
+}
+@media (max-width: 970px) {
+    p {
+        font-size: 1.5rem;
+    }
+    .header-heading {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+   
 }
 
