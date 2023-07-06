@@ -44,6 +44,9 @@
         margin-top: 7.9rem;
     }
 }
+.hiddin-image {
+    display: none;
+}
 @media (max-width: 1530px) {
     .header-hero {
         &-left-image {
@@ -53,7 +56,6 @@
     .header-hero-wrapper {
         // position: static;
         height: 100%;
-        background-color: aqua;
     }
     .header-heading {
         flex-direction: column;
@@ -76,11 +78,14 @@
         align-items: center;
     }
     .header-hero-right-image {
-        position: static;
-        width: 100%;
-        height: auto;
+        display: none;
     }    
-   
+   .hiddin-image {
+    display: block;
+    margin-top: 9.7rem;
+    width: 100%;
+    height: auto;
+   }
   
 }
 @media (max-width: 970px) {
