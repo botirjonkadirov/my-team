@@ -641,7 +641,7 @@ main {
     display: none;
   }
   .header-hero-right-image {
-    top: 0rem;
+    position: static;
     width: 100%;
     height: auto;
   }
