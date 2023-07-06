@@ -51,17 +51,9 @@
         }
     }
     .header-hero-wrapper {
-        position: static;
-    }
-    .header-hero-right-image {
-        // position: initial;
-        position: static;
-        width: 100%;
-        height: auto;
-
-        // display: flex;
-        // background-color: aqua;
-        
+        // position: static;
+        height: 100%;
+        background-color: aqua;
     }
     .header-heading {
         flex-direction: column;
@@ -70,16 +62,26 @@
             font-size: 6.4rem;
             text-align: center;
         }
+      
      .header-heading-hr {
         display: none;
      }
     }
-   
     .wrapper {
+        width: 100%;
         height: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
+    .header-hero-right-image {
+        position: static;
+        width: 100%;
+        height: auto;
+    }    
+   
+  
 }
 @media (max-width: 970px) {
     p {
