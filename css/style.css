@@ -485,12 +485,10 @@ body {
 .footer {
   background-color: #002529;
   height: auto;
+  width: 100%;
 }
 .footer-text {
   width: 100%;
-  width: 44, 5rem;
-  height: 10rem;
-  text-align: left;
   font-size: 1.5rem;
   color: 1.66;
   font-weight: 600;
@@ -567,7 +565,7 @@ body {
     height: auto;
   }
   .footer-text {
-    width: 32rem;
+    width: 100%;
     margin: 0;
     height: auto;
     text-align: center;
@@ -621,9 +619,6 @@ main {
 .header-heading-item {
   display: flex;
   flex-direction: column;
-}
-.header-heading-h {
-  width: 52.6rem;
 }
 .header-heading-h span {
   color: #F67E7E;
