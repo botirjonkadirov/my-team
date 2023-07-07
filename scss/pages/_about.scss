@@ -1,0 +1,110 @@
+.header-hero-wrapper {
+    position: relative;
+    margin-top: 12.9rem;
+    width: auto;
+    .header-hero-left-image {
+        position: absolute;
+        left: -16.8rem;
+    }
+    .header-hero-right-image {
+        position: absolute;
+        right: 0;
+        top: 35rem;
+    }
+    h1 {
+        font-size: $h1-lage-font-size;
+        line-height: $h1-lage-lh;
+    }
+}
+.header-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-hr {
+        width: 50px;
+        height: 4px;
+        background-color: $secondary-rapture-blue;
+        border-style:none;
+    }
+    &-item {
+        display: flex;
+        flex-direction: column;
+    }
+    &-h {
+        width: 52.6rem;
+        span {
+            color: $primary-ligth-coral;
+        }
+    }
+    p {
+        width: 44.5rem;
+        font-size: $body1-font-size;
+        font-weight: 600;
+        line-height: 1.55;
+        margin-top: 7.9rem;
+    }
+}
+.hiddin-image {
+    display: none;
+}
+@media (max-width: 1530px) {
+    .header-hero {
+        &-left-image {
+            display: none;
+        }
+    }
+    .header-hero-wrapper {
+        // position: static;
+        height: 100%;
+    }
+    .header-heading {
+        flex-direction: column;
+        // background-color: aqua;
+        h1 {
+            font-size: 6.4rem;
+            text-align: center;
+        }
+      
+     .header-heading-hr {
+        display: none;
+     }
+    }
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-hero-right-image {
+        display: none;
+    }    
+   .hiddin-image {
+    display: block;
+    margin-top: 9.7rem;
+    width: 100%;
+    height: auto;
+   }
+  
+}
+@media (max-width: 970px) {
+    p {
+        font-size: 1.5rem;
+    }
+    .header-heading {
+        h1 {
+            font-size: 4rem;
+        }
+        p {
+            width: 32.7rem;
+            margin-top: 3rem;
+        }
+    }
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+   
+}
+
