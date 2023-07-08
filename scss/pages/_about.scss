@@ -167,6 +167,60 @@
     }
   
 }
+
+
+// main end
+.main-end {
+    background-color: $primary-ligth-coral;
+    background-image: url(/images/main-end-bg.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 7.6rem;
+        padding-bottom: 7.6rem;
+        gap: 26rem;
+    }
+    h2 {
+        font-size: $h2-font-size;
+        font-weight: 700;
+        line-height: $h2-lh;
+        color: $secondary-sacramento-state-green;
+    }
+
+}
+
+// main-end media
+
+@media (max-width: 1225px) {
+    .main-end {
+        h2 {
+            font-size: 3.2rem;
+        }
+        &-container {
+            gap: 8.4rem;
+            padding-top: 8.4rem;
+            padding-bottom: 8.4rem;
+        }
+    }
+}
+@media (max-width: 830px) {
+    .main-end {
+        &-container {
+            flex-direction: column;
+            gap: 2.4rem;
+            padding-top: 11rem;
+            padding-bottom: 11rem;
+        }
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+
 // main centr media
 
 @media (max-width: 1230px) {

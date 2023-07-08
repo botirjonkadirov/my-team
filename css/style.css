@@ -751,6 +751,48 @@ main {
   color: #79C8C7;
 }
 
+.main-end {
+  background-color: #F67E7E;
+  background-image: url(/images/main-end-bg.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.main-end-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7.6rem;
+  padding-bottom: 7.6rem;
+  gap: 26rem;
+}
+.main-end h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #012F34;
+}
+
+@media (max-width: 1225px) {
+  .main-end h2 {
+    font-size: 3.2rem;
+  }
+  .main-end-container {
+    gap: 8.4rem;
+    padding-top: 8.4rem;
+    padding-bottom: 8.4rem;
+  }
+}
+@media (max-width: 830px) {
+  .main-end-container {
+    flex-direction: column;
+    gap: 2.4rem;
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+  }
+  .main-end h2 {
+    text-align: center;
+  }
+}
 @media (max-width: 1230px) {
   .main-centr-ul {
     flex-direction: column;
