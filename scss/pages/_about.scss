@@ -2,6 +2,7 @@
     position: relative;
     margin-top: 12.9rem;
     width: auto;
+    padding-bottom: 25rem;
     .header-hero-left-image {
         position: absolute;
         left: -16.8rem;
@@ -47,6 +48,95 @@
 .hiddin-image {
     display: none;
 }
+// main start
+
+
+.main {
+    background-color: $secondary-sacramento-state-green;
+    background-image: url(/images/start-background-image.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.start-wrapper {
+    display: flex;
+    justify-content: space-between;
+ 
+    
+  
+}
+.start-heading {
+    margin-top: 14rem;
+    &-hr {
+        width: 50px;
+        height: 4px;
+        background-color:  $primary-ligth-coral;
+        border-style: none;
+        margin-bottom: 5.4rem;
+    }
+    &-h {
+        font-size: $h2-font-size;
+        font-weight: 700;
+        line-height: $h2-lh;
+    }
+}
+.start-ul {
+    margin-top: 19.8rem;
+    margin-bottom: 14rem;
+    &-list {
+        display: flex;
+        gap: 2.3rem;
+        padding-bottom: 3.2rem;
+    }
+    &-list-h {
+        padding-bottom: 1.6rem;
+        color: $primary-ligth-coral;
+        font-size: $h3-font-size;
+        line-height: $h3-lh;
+        font-weight: 700;
+    }
+    &-list-p {
+        font-size: $body2-font-size;
+        font-weight: 500;
+        line-height: $body2-lh;
+        opacity: 80%;
+    }
+}
+// main start media
+@media (max-width: 1270px) {
+    .start-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main {
+        background-position: top right;
+    }
+    .start-heading-h {
+        font-size: 3.2rem;
+
+    }
+    .start-ul {
+        margin-top: 6.4rem;
+        margin-bottom: 10rem;
+    }
+
+}
+@media (max-width: 570px) {
+    .start-ul {
+        margin-top: 6.4rem;
+        margin-bottom: 10rem;
+        &-list {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+       
+    }
+    .start-wrapper {
+        align-items: baseline;
+    }
+}
+
+// header hero 
 @media (max-width: 1530px) {
     .header-hero {
         &-left-image {
@@ -56,6 +146,7 @@
     .header-hero-wrapper {
         // position: static;
         height: 100%;
+        padding-bottom: 0;
     }
     .header-heading {
         flex-direction: column;
