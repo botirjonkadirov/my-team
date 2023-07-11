@@ -46,3 +46,12 @@ body {
   line-height: $body2-lh;
   color:$primary-whtie;
 }
+h1 {
+  @include font-setting ($h1-small-font-size, 700, $h1-small-lh, $primary-whtie)
+}
+h2 {
+  @include font-setting ($h2-font-size, 700, $h2-lh, $primary-whtie)
+}
+h3 {
+  @include font-setting ($h3-font-size, 700, $h3-lh, $primary-whtie)
+}
